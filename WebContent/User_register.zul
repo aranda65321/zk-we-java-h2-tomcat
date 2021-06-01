@@ -1,0 +1,55 @@
+<?page title="User Register" contentType="text/html;charset=UTF-8"?>
+<zk><div style="margin: 9% 10% 30% 32%">
+	<window title="Register user" border="normal" width="700px"
+		height="600px" style="text-align:center"
+		apply="controlpage.control_register">
+		<div align="center" style="text-align:center;" vflex="min">
+			<grid height="430px" width="630px">
+				<auxhead>
+					<auxheader colspan="1" label="Register Form"
+						iconSclass="z-icon-user-circle-o" />
+				</auxhead>
+
+
+				<columns visible="false">
+					<column label="" />
+				</columns>
+				<rows>
+					<row>
+						<label value=" Full name:" />
+						<textbox id="user_name" constraint="no empty" />
+					</row>
+					<row>
+						<label value="Email:" />
+						<textbox id="user_mail" constraint="no empty" />
+					</row>
+					<row>
+						<label value="User:" />
+						<textbox id="user_user" constraint="no empty" />
+					</row>
+					<row>
+						<label value="Password:" />
+						<textbox id="user_pass" constraint="no empty" />
+					</row>
+					<row>
+						<button id="button_register" label="Register"
+							onClick="" />
+						<a id="login">
+							<label
+								value="..you already have an account login here"
+								style="font-size:12px;" />
+
+						</a>
+					</row>
+					<row>
+						<label id="state_register" value="" />
+					</row>
+
+				</rows>
+			</grid>
+
+
+		</div>
+	</window>
+	</div>
+</zk>

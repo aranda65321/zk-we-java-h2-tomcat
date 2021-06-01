@@ -1,0 +1,54 @@
+<?page title="Login" contentType="text/html;charset=UTF-8"?>
+
+<?style src="css/style.css"?>
+<?script src="js/bootstrap.js"?>
+<zk>
+	<div style="margin: 9% 10% 30% 40%" xmlns:n="native">
+		<window title="Login" border="normal" width="370px"	height="400px" style="text-align:center" apply="controlpage.controlpage">
+			<div>
+				<grid id="formgrid" width="300px" height="300px">
+
+					<auxhead>
+
+						<auxheader colspan="1" label="Login Form" iconSclass="z-icon-user-circle-o" />
+
+					</auxhead>
+
+					<columns visible="false">
+						<column></column>
+					</columns>
+					<rows>
+						<row>
+							<label value="User Name:" class="text-success" />
+
+							<textbox id="User" sclass="User" hflex="1"
+								constraint="no empty" />
+						</row>
+						<row>
+							<label value="Password:" id="ss" sclass="ss" />
+
+							<textbox type="password" id="Pass"
+								sclass="Pass" constraint="no empty" hflex="1" class="btn btn-danger" />
+						</row>
+						<row>
+
+							<button id="login_button" sclass="btn" label="Submit" />
+							<a id="register">
+								<label value="Don't have an account. Register"	style="font-size:12px;" />
+
+							</a>
+						</row>
+
+						<row>
+							<label id="login_status" value="" style="font-size:9px;" />
+						</row>
+
+					</rows>
+				</grid>
+
+			</div>
+		</window>
+	</div>
+
+</zk>
+

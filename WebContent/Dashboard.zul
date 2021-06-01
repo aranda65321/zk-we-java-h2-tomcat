@@ -1,0 +1,173 @@
+<?page title="Dashboard" contentType="text/html;charset=UTF-8"?>
+<?init class="model.Authentication"?>
+<zk>
+	<window title="Dashboard" border="normal"
+		apply="controlpage.Control_dashboard">
+
+
+		<hlayout>
+			<label value="Search user:" />
+			<textbox id="sh_user" />
+			<button id="b1" label="Search" onClick="" />
+
+			<combobox value="Select operation" id="operation">
+				<comboitem label="View user data" />
+				<comboitem label="Create user" />
+				<comboitem label="Update user" />
+				<comboitem label="Delete user" />
+			</combobox>
+			<button label="Click" onClick="" id="b2" />
+
+			<button id="logout" label="Logout" onClick="" />
+
+
+
+
+		</hlayout>
+
+		<grid id="list_data">
+			<columns>
+				<column label="Full name" />
+				<column label="Email" />
+				<column label="User" />
+				<column label="Password" />
+
+			</columns>
+
+
+			<rows>
+
+
+
+
+			</rows>
+
+
+		</grid>
+
+		<grid id="search_user">
+			<columns visible="true">
+				<column label="Full name" />
+				<column label="Email" />
+				<column label="User" />
+				<column label="Password" />
+				<column label="Operaciones" />
+			</columns>
+
+
+			<rows>
+				<row>
+					<label value="" id="tx1" />
+					<label value="" id="tx2" />
+					<label value="" id="tx3" />
+					<label value="" id="tx4" />
+
+				</row>
+
+
+
+
+			</rows>
+
+
+		</grid>
+		<grid id="create_us">
+			<columns visible="true">
+				<column label="Full name" />
+				<column label="Email" />
+				<column label="User" />
+				<column label="Password" />
+				<column label="Operation" />
+			</columns>
+
+
+			<rows>
+				<row>
+					<textbox id="t1" />
+					<textbox id="t2" />
+					<textbox id="t3" />
+					<textbox id="t4" />
+					<button label="Create user" onClick="" id="b3" />
+				</row>
+
+			</rows>
+
+
+		</grid>
+		<grid id="del">
+			<columns visible="true">
+				<column label="Insert User" />
+				<column label="Operation" />
+			</columns>
+			<rows>
+
+				<row>
+					<textbox id="t5" />
+					<button label="Delete" onClick="" id="bb4" />
+				</row>
+
+			</rows>
+
+
+		</grid>
+		<grid id="aux_up">
+			<columns visible="true">
+				<column label="Insert user to edit" />
+
+				<column label="Operation" />
+			</columns>
+			<rows>
+				<row>
+
+					<textbox id="u_up" />
+					<button label="Search" onClick="" id="b5" />
+
+				</row>
+
+			</rows>
+
+
+		</grid>
+
+
+
+
+
+
+
+
+
+		<grid id="update_user">
+			<columns visible="true">
+				<column label="Insert full name" />
+				<column label="Insert Email" />
+				<column label="Insert User" />
+				<column label="Insert Password" />
+				<column label="Operation" />
+			</columns>
+			<rows>
+
+
+
+				<row>
+					<textbox id="t6" />
+					<textbox id="t7" />
+					<textbox id="t8" />
+					<textbox id="t9" />
+					<button label="Update user" onClick="" id="bb6" />
+				</row>
+				<row>
+
+
+				</row>
+
+			</rows>
+
+
+		</grid>
+
+
+
+
+	</window>
+</zk>
